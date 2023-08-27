@@ -1,3 +1,18 @@
+# 7 GUI's CRUD App
+
+## Please Read The Description Behind This Project
+## Read More About The 7 GUI's here: https://eugenkiss.github.io/7guis/tasks
+The 7 GUI projects are a programming benchmark to test a programmers skills.
+These 7 GUI's are done in iterations and each iteration usually a new feauture is added.
+These 7 GUI's are seven separate projects that consist of:
+1. Counter (Challenge: Understanding the basic ideas of a language/toolkit.)
+2. Temperature Converter (Challenges: bidirectional data flow, user-provided text input.)
+3. Flight Booker (Challenge: Constraints.)
+4. Timer (Challenges: concurrency, competing user/signal interactions, responsiveness.)
+5. CRUD (Challenges: separating the domain and presentation logic, managing mutation, building a non-trivial layout.)
+6. Circle Drawer (Challenges: undo/redo, custom drawing, dialog control*.)
+7. Cells (Challenges: change propagation, widget customization, implementing a more authentic/involved GUI application.)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
