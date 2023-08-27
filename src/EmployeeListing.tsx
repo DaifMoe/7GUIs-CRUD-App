@@ -16,7 +16,9 @@ const EmployeeListing = () => {
     navigate("/employee/details/" + id);
   };
 
-  //const LoadEdits = (id) => {};
+//   const LoadEdits = (id) => {
+//     navigate("/employee/edit")
+//   };
 
  // const DeleteFunction = (id) => {};
 
