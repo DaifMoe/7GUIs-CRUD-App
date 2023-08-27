@@ -1,5 +1,8 @@
 # 7 GUI's CRUD App
 Built using React JS and JSON Server REST API
+This app is an employee tracker for companies
+it allows for them to add an employee, edit exisitng employees,
+delete employees, and lastly view their details. A great full-stack challenge.
 
 ## Please Read The Description Behind This Project
 ## Read More About The 7 GUI's here: https://eugenkiss.github.io/7guis/tasks
