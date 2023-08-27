@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 interface Employee {
   id: number;
@@ -10,6 +10,15 @@ interface Employee {
 
 const EmployeeListing = () => {
   const [employeeData, setEmployeeData] = useState<Employee[] | null>(null);
+  const navigate = useNavigate();
+
+  const LoadDetails = (id: number) => {
+    navigate("/employee/details/" + id);
+  };
+
+  //const LoadEdits = (id) => {};
+
+ // const DeleteFunction = (id) => {};
 
   useEffect(() => {
     fetch("http://localhost:8000/employee")
@@ -55,9 +64,30 @@ const EmployeeListing = () => {
                     <td>{item.email}</td>
                     <td>{item.phone}</td>
                     <td>
-                      <a className="btn btn-success">Edit</a>
-                      <a className="btn btn-danger">Delete</a>
-                      <a className="btn btn-primary">Details</a>
+                      <a
+                        onClick={() => {
+                          //LoadEdits(item.id);
+                        }}
+                        className="btn btn-success"
+                      >
+                        Edit
+                      </a>
+                      <a
+                        onClick={() => {
+                          //DeleteFunction(item.id);
+                        }}
+                        className="btn btn-danger"
+                      >
+                        Delete
+                      </a>
+                      <a
+                        onClick={() => {
+                          LoadDetails(item.id);
+                        }}
+                        className="btn btn-primary"
+                      >
+                        Details
+                      </a>
                     </td>
                   </tr>
                 ))}
