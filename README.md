@@ -1,4 +1,5 @@
 # 7 GUI's CRUD App
+Built using React JS and JSON Server REST API
 
 ## Please Read The Description Behind This Project
 ## Read More About The 7 GUI's here: https://eugenkiss.github.io/7guis/tasks
