@@ -53,6 +53,7 @@ const CreateEmployee = () => {
                     <div className="form-group">
                       <label>Name</label>
                       <input
+                        required
                         value={name}
                         onChange={(e) => changeName(e.target.value)}
                         className="form-control"
@@ -64,6 +65,8 @@ const CreateEmployee = () => {
                     <div className="form-group">
                       <label>Email</label>
                       <input
+                        type="email"
+                        required
                         value={email}
                         onChange={(e) => changeEmail(e.target.value)}
                         className="form-control"
@@ -75,6 +78,7 @@ const CreateEmployee = () => {
                     <div className="form-group">
                       <label>Phone</label>
                       <input
+                        required
                         value={phone}
                         onChange={(e) => changePhone(e.target.value)}
                         className="form-control"
@@ -85,6 +89,7 @@ const CreateEmployee = () => {
                   <div className="col-lg-12">
                     <div className="form-check">
                       <input
+                        required
                         checked={active}
                         onChange={(e) => changeActive(e.target.checked)}
                         type="checkbox"
