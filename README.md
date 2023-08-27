@@ -19,6 +19,7 @@ These 7 GUI's are seven separate projects that consist of:
 
 # Getting Started with Create React App
 
+json-server --watch db.json
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
