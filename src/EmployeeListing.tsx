@@ -16,11 +16,24 @@ const EmployeeListing = () => {
     navigate("/employee/details/" + id);
   };
 
-//   const LoadEdits = (id) => {
-//     navigate("/employee/edit")
-//   };
+  const LoadEdits = (id: number) => {
+    navigate("/employee/edit");
+  };
 
- // const DeleteFunction = (id) => {};
+  const DeleteFunction = (id: number) => {
+    if (window.confirm("Are you sure you want to Delete this Employee?")) {
+      fetch("http://localhost:8000/employee/" + id, {
+        method: "DELETE",
+      })
+        .then((res) => {
+          alert("Employee Deleted Successfully.");
+          window.location.reload();
+        })
+        .catch((err) => {
+          console.log(err.message);
+        });
+    }
+  };
 
   useEffect(() => {
     fetch("http://localhost:8000/employee")
@@ -68,7 +81,7 @@ const EmployeeListing = () => {
                     <td>
                       <a
                         onClick={() => {
-                          //LoadEdits(item.id);
+                          LoadEdits(item.id);
                         }}
                         className="btn btn-success"
                       >
@@ -76,7 +89,7 @@ const EmployeeListing = () => {
                       </a>
                       <a
                         onClick={() => {
-                          //DeleteFunction(item.id);
+                          DeleteFunction(item.id);
                         }}
                         className="btn btn-danger"
                       >
