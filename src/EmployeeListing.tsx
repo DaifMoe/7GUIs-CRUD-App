@@ -31,8 +31,8 @@ const EmployeeListing = () => {
           <h2>Employee Listings</h2>
         </div>
         <div className="card-body">
-          <div>
-            <Link to="" className="btn btn-success">
+          <div className="divbtn">
+            <Link to="employee/create" className="btn btn-success">
               Add New (+)
             </Link>
           </div>

@@ -2,6 +2,9 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import EmployeeListing from "./EmployeeListing";
+import CreateEmployee from "./CreateEmployee";
+import EmployeeDetails from "./EmployeeDetails";
+import EditEmployee from "./EditEmployee";
 
 function App() {
   return (
@@ -10,6 +13,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<EmployeeListing />} />
+          <Route path="/employee/create" element={<CreateEmployee />} />
+          <Route path="/employee/details:empid" element={<EmployeeDetails />} />
+          <Route path="/employee/edit/:empid" element={<EditEmployee />} />
         </Routes>
       </BrowserRouter>
     </div>

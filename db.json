@@ -5,6 +5,13 @@
       "name": "Moe",
       "email": "moe@gmail.com",
       "phone": "1234567898"
+    },
+    {
+      "name": "Cool Man",
+      "email": "cool@gmail.com",
+      "phone": "9739739734",
+      "active": true,
+      "id": 2
     }
   ]
 }
